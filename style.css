@@ -1,0 +1,172 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background: linear-gradient(to left, #f36ea3, #785d7b); */
+  background-image: url(/img1.jpg);
+}
+
+.class {
+  border-block: initial;
+}
+.calc {
+  width: 250px;
+  padding: 100px;
+  border-radius: 30px;
+  top: 50%;
+  left: 70%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  translate: 0.25px;
+  text-align: center;
+  border: 1px solid #04293a;
+}
+
+.calc:hover {
+  background-image: url(../css/image/.jpg);
+}
+#display {
+  border: transparent;
+  background: #fff;
+  border-radius: 122px;
+  width: 245px;
+  font-size: 22px;
+  font-weight: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 60px;
+  margin: auto;
+  border: 2px solid;
+  color: black;
+  text-align: center;
+}
+.btn {
+  width: 55px;
+  height: 55px;
+  padding-top: -1;
+  border: 2px solid transparent;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-radius: 122px;
+  margin: 1.5px;
+  transition: 0.25px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(255, 255, 255);
+}
+.operator {
+  width: 55px;
+  height: 55px;
+  padding-top: -1;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-radius: 122px;
+  margin: 1.5px;
+  border: 2px solid transparent;
+}
+
+.operator:hover {
+  background: rgba(255, 255, 255, 0.493);
+}
+#zero {
+  width: 55px;
+  height: 55px;
+  padding-top: -1;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-radius: 30px;
+  margin: 1.5px;
+  border: 2px solid transparent;
+}
+#zero:hover {
+  background: white;
+}
+
+h1 {
+  margin-top: 300px;
+  margin-left: 100px;
+  color: rgb(253, 252, 252);
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  text-decoration: none;
+  border-radius: 122px;
+  background-color: rgb(39, 2, 14);
+  max-width: fit-content;
+  padding: 0 10px;
+  animation-name: calculator;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+@keyframes calculator {
+  to {
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: #f08ca3;
+  }
+}
+
+h2 {
+  margin-left: 250px;
+  animation-name: my;
+  animation-duration: 5s;
+  border-radius: 122px;
+  background-color: rgb(157, 229, 229);
+  max-width: fit-content;
+  padding: 0 20px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h2 {
+  to {
+    animation-name: my;
+    margin-left: 250px;
+  }
+}
+
+h2:hover {
+  background-color: rgb(233, 158, 45);
+  animation-duration: 5s;
+}
+
+@media only screen and (max-width: 576px) {
+  .class {
+    border-block: initial;
+  }
+  h1 {
+    margin-top: 5%;
+    background-color: rgb(39, 2, 14);
+    max-width: fit-content;
+    padding: 0 10px;
+    animation-name: calculator;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    margin-left: 150px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  h2 {
+    margin-left: 250px;
+    animation-name: my;
+    animation-duration: 5s;
+    border-radius: 122px;
+    background-color: rgb(157, 229, 229);
+    max-width: fit-content;
+    padding: 0 20px;
+    animation-iteration-count: infinite;
+  }
+  h2:hover {
+    background-color: rgb(233, 158, 45);
+    animation-duration: 5s;
+  }
+  .calculator {
+    position: relative;
+  }
+}
